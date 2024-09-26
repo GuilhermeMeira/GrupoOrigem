@@ -1,0 +1,207 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+}
+
+body.ori {
+    background-image: url('imagens/fundoori.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.segreto{
+    background-image: url('imagens/fundosegreto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.rooftop{
+    background-image: url('imagens/fundofera.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.gem{
+    background-image: url('imagens/fundogem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.omi{
+    background-image: url('imagens/fundoomi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.origem{
+    background-image: url('imagens/fundoorigem.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.containerHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.botaoHeader{
+    max-width: 55px;
+    transition: filter 0.5s ease; 
+}
+
+.botaoHeader:hover{
+    filter: invert(1); 
+}
+
+
+.containerContent {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+}
+.logo {
+    max-width: 490px; 
+    max-width: 490px;
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logoFooter {
+    max-width: 240px; /* Ajuste o tamanho da logo conforme necessário */
+    max-width: 240px;
+    object-fit: contain; /* Garante que a logo se ajuste dentro das dimensões sem distorcer */
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.containerFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textboxContent{
+    text-decoration: none;
+    display: flex;
+    border: 3px solid white; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: white;
+    padding: 15px 45px;
+    max-width: 1050px;
+    max-height: 400px;
+    font-size: 26px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    transition: 1s ease;
+}
+.textboxContent:hover {
+    background-color: white;
+    color: black;
+}
+
+.textboxhorarios {
+    display: flex;
+    border: 3px solid white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 20px;
+    max-width: 1050px;
+    max-height: 400px;
+    font-size: 20px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+.textboxredes {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    max-width: 1050px;
+    max-height: 400px;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+.containerIcons{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    transition: 1s;
+    margin-left: 10px;
+
+}
+.containerIcons:hover{
+    .icons{
+        filter: invert();
+    }
+    
+}
+
+.icons{
+    max-height: 35px;
+    max-width: 35px;
+    transition: 1s;
+    border-radius: 10px;
+}
+.textIcons{
+    margin-left: 10px;
+}
+
+
+a {
+    text-decoration: none;  /* Remove sublinhado */
+    color: inherit;         /* Herda a cor do elemento pai */
+    font-style: normal;     /* Remove qualquer estilo de fonte, como itálico */
+    font-weight: normal;    /* Remove qualquer peso de fonte especial */
+    background: none;       /* Remove qualquer fundo aplicado */
+    border: none;           /* Remove qualquer borda aplicada */
+    padding: 0;             /* Remove qualquer padding */
+    margin: 0;              /* Remove qualquer margem */
+    outline: none;          /* Remove o contorno de foco */
+}

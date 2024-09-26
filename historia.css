@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Impede a barra de rolagem */
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; /* Inclui bordas e paddings no tamanho total */
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.containerHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.botaoHeader{
+    max-width: 55px;
+    transition: 1s;
+}
+.botaoHeader:hover {
+    filter:invert()
+}
+
+body {
+    background-image: url('imagens/Fundohistoria.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Centraliza os elementos no eixo horizontal */
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logoFooter {
+    max-width: 180px; /* Tamanho da logo */
+    object-fit: contain; /* Para ajustar a logo */
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 20px;
+    transform: translateX(180%); /* Move para a esquerda de forma responsiva */
+}
+
+.containerFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo no centro */
+    align-items: center;
+}
+
+
+.container {
+    text-align: center;
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    margin-top: 50px; /* Ajuste conforme necessário */
+    transform: translateX(18%); /* Move para a esquerda de forma responsiva */
+    
+}
+
+.titulo {
+    font-size: 78px;
+    color: white; /* Cor do texto */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text-box {
+    display: flex;
+    border: 3px solid white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 40px;
+    max-width: 1050px;
+    max-height: 400px;
+    font-size: 36px;
+    border-radius: 40px;
+}
